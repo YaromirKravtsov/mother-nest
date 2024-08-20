@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 
-
+//Замена фреймворка с express на Nest и добовление логина
 import { SequelizeModule } from '@nestjs/sequelize';
 import { UserModule } from './user/user.module';
 import { User } from './user/user.model';
