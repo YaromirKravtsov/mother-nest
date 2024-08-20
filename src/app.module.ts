@@ -22,8 +22,8 @@ import { TelegramClientModule } from './telegram-client/telegram-client.module';
       dialect: 'mysql',
       host: process.env.MYSQL_HOST,
       port: Number(process.env.MYSQL_PORT),
-      username: 'root',
-      password:'root',
+      username: process.env.MYSQL_USER,
+      password: (process.env.MYSQL_PASSWORD),
       database: process.env.MYSQL_DB,
       models: [User,Token],
       autoLoadModels:false
